@@ -54,7 +54,7 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
 
 ### Signup/Login
  - Signup, sign in and forgot password functionalities are implemented including UI. To use it:
-    1. copy the Controllers -> Authentication directory to your project and call SignUpViewController. 
+    1. copy the `Controllers -> Authentication` directory to your project and call SignUpViewController. 
     2. Make sure you have added Networking directory, in order for sign up related APIs work properly
     3. Add AuthManager from Managers directory
 
@@ -74,7 +74,7 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
   
 ### Apple Signin
   1. Enable your app's Signin with Apple capability in App developer account
-  2. In your project, add signin with apple capability in Targets -> Signing & Capabilities
+  2. In your project, add signin with apple capability in `Targets -> Signing & Capabilities`
   3. Click + button, search for Signin with Apple and double click to add capability
   4. Add SocialAuthManager.swift from Managers directory to your project
   5. In viewDidLoad call SocialAuthManager.shared.setPresentingViewController
