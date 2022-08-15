@@ -83,7 +83,7 @@ Additional steps:
   6. Call SocialAuthManager.shared.performSignin() for signin and SocialAuthManager.shared.logout() to signout
 
 ### Firabase Authentication
-1. Create a firebase project at https://console.firebase.google.com/u/0/
+1. Create a firebase project at [Firebase Console](https://console.firebase.google.com/u/0/)
 2. Add Firebase Authentication to your app using Cocoapods `pod 'FirebaseAuth'`
 3. Enable Providers that you want to integrate 
     1. Go to firebase console
