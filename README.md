@@ -85,7 +85,7 @@ Additional steps:
 ### Firabase Authentication
 1. Create a firebase project at [Firebase Console](https://console.firebase.google.com/u/0/)
 2. Add Firebase Authentication to your app using Cocoapods `pod 'FirebaseAuth'`
-3. Enable Providers that you want to integrate 
+3. Enable Providers that you want to integrate using following steps
     1. Go to firebase console
     2. select project
     3. select Authentication from the left pane
