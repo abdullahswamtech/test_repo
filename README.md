@@ -15,7 +15,7 @@ UI built programatically using `UIKit` and `Anchorage`
  - Firebase Authentication
  
  
-##### Theme Management
+### Theme Management
 - Dark and light modes are handled. Color schemes can be changed with minimal effort by just changing colors in Assets. 
 - Steps to integragte theme management :
     1. Copy ThemeManager.swift file from 'Managers' directory. 
@@ -24,7 +24,7 @@ UI built programatically using `UIKit` and `Anchorage`
     4. Add new colors to ThemeManager and assets if it is not already present there.
     5. Colors can be accessed like this "ThemeManager.shared.currentTheme.colorName"
     6. To change theme, assign new value to "ThemeManager.shared.currentTheme" and call ViewController.update()
-##### NetworkManagement
+### NetworkManagement
  - The network layer is managed in the Networking directory. 
     1. Copy Networking directory to your app
     2. Change 'baseURL' in MainAPIClient.swift file
@@ -50,19 +50,19 @@ UI built programatically using `UIKit` and `Anchorage`
         }
         ```
 
-##### Signup/Login
+### Signup/Login
  - Signup, sign in and forgot password functionalities are implemented including UI. To use it:
     1. copy the Controllers -> Authentication directory to your project and call SignUpViewController. 
     2. Make sure you have added Networking directory, in order for sign up related APIs work properly
     3. Add AuthManager from Managers directory
 
-##### Google login
+### Google login
  1. Add Google Signin capability to your app by following instructions at this link https://developers.google.com/identity/sign-in/ios/start-integrating
  2. Add SocialAuthManager.swift from Managers directory. (Remove code for other logins if not needed)
  3. In viewDidLoad call SocialAuthManager.shared.setPresentingViewController
  4. Call SocialAuthManager.shared.performSignin() for signin and SocialAuthManager.shared.logout() to signout
  
-##### Facebook Signin
+### Facebook Signin
   1. Add Facebook Signin capability to your app by following instructions at this link https://developers.facebook.com/docs/facebook-login/ios/
   2. Create an app on Facebook developers console by following instructions at this link https://developers.facebook.com/docs/development/create-an-app/
   3.  Add SocialAuthManager.swift from Managers directory to your project. (Remove code for other logins if not needed)
@@ -70,7 +70,7 @@ UI built programatically using `UIKit` and `Anchorage`
   5. In viewDidLoad call SocialAuthManager.shared.setPresentingViewController
   6. Call SocialAuthManager.shared.performSignin() for signin and SocialAuthManager.shared.logout() to signout
   
-##### Apple Signin
+### Apple Signin
   1. Enable your app's Signin with Apple capability in App developer account
   2. In your project, add signin with apple capability in Targets -> Signing & Capabilities
   3. Click + button, search for Signin with Apple and double click to add capability
@@ -78,7 +78,7 @@ UI built programatically using `UIKit` and `Anchorage`
   5. In viewDidLoad call SocialAuthManager.shared.setPresentingViewController
   6. Call SocialAuthManager.shared.performSignin() for signin and SocialAuthManager.shared.logout() to signout
 
-##### Firabase Authentication
+### Firabase Authentication
 1. Create a firebase project at https://console.firebase.google.com/u/0/
 2. Add Firebase Authentication to your app using Cocoapods `pod 'FirebaseAuth'`
 3. Enable Providers that you want to integrate 
