@@ -30,7 +30,7 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
     2. Add package `AFNetworking` using cocoa pods or package manager.
     3. Copy `AppUtils` from  "Packages" directory and to your project
     4. Change 'baseURL' in MainAPIClient.swift file
-    5. Add requests in requests folder, organised in subdirectories of relevant category (e.g Networking -> Requests -> Authentication contains all requests related to user authentication). See already existing request as reference
+    5. Add requests in requests folder, organised in subdirectories of relevant category (e.g `Networking -> Requests -> Authentication` contains all requests related to user authentication). See already existing request as reference
     6. Usage example
         ```
         private func signUp() {
