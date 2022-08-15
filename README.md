@@ -1,6 +1,7 @@
 # Fortnight iOS Template
 
-Fortnight iOS Template is a reference app which contains most commonly used features in mobile apps such as signup/login, facebook login, google login etc. It is built to save development time. It also has UI 
+Fortnight iOS Template is a reference app which contains most commonly used features in mobile apps such as signup/login, facebook login, google login etc. It is built to save development time. UI is also implemented.
+ 
 ## Architecture
 MVVM using `Combine` framework.
 UI built programatically using `UIKit` and `Anchorage`
