@@ -27,9 +27,11 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
 ### NetworkManagement
  - The network layer is managed in the Networking directory. 
     1. Copy Networking directory to your app
-    2. Change 'baseURL' in MainAPIClient.swift file
-    3. Add requests in requests folder, organised in subdirectories of relevant category (e.g Networking -> Requests -> Authentication contains all requests related to user authentication). See already existing request as reference
-    4. Usage example
+    2. Add package `AFNetworking` using cocoa pods or package manager.
+    3. Copy `AppUtils` from  "Packages" directory and to your project
+    4. Change 'baseURL' in MainAPIClient.swift file
+    5. Add requests in requests folder, organised in subdirectories of relevant category (e.g Networking -> Requests -> Authentication contains all requests related to user authentication). See already existing request as reference
+    6. Usage example
         ```
         private func signUp() {
             let email = emailViewModel.text.lowercased()
