@@ -19,7 +19,7 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
 - Dark and light modes are handled. Color schemes can be changed with minimal effort by just changing colors in Assets. 
 - Steps to integragte theme management :
     1. Copy ThemeManager.swift file from 'Managers' directory. 
-    2. Go to assets, drag and drop Colors folder to your app assets
+    2. Go to assets in Fortnight iOS Template, drag and drop Colors folder to your app assets
     3. Use predefined colors such as screenBackgroundColor, labelTextColor, primaryButtonTextColor etc from ThemeManager whenever a color is needed anywhere in the app.
     4. Add new colors to ThemeManager and assets if it is not already present there.
     5. Colors can be accessed like this "ThemeManager.shared.currentTheme.colorName"
