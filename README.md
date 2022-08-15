@@ -91,7 +91,7 @@ Additional steps:
     3. select Authentication from the left pane
     4. select signin Methods tab
     5. click add new provider and select desired providers (Facebook, Google, Apple)
-3. Import FirebaseCore in AppDelegate and call FirebaseApp.configure() `application:didFinishLaunchingWithOptions:` to initialize FirebaseApp object
+3. Import FirebaseCore in AppDelegate and call FirebaseApp.configure() in `application:didFinishLaunchingWithOptions:` methods in AppDelegate to initialize FirebaseApp object
 4. Add SocialAuthManager.swift from Managers directory to your project
   5. In viewDidLoad call SocialAuthManager.shared.setPresentingViewController
   6. Call SocialAuthManager.shared.performSignin() for signin and SocialAuthManager.shared.logout() to signout
