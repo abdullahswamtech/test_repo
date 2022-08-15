@@ -53,11 +53,13 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
         ```
 
 ### Signup/Login
- - Signup, sign in and forgot password functionalities are implemented including UI. To use it:
+ - Signup, sign in and forgot password functionalities are implemented including UI. 
+Additional steps:
     1. copy the `Controllers -> Authentication` directory to your project and call SignUpViewController. 
     2. Make sure you have added Networking directory, in order for sign up related APIs work properly
     3. Add AuthManager from Managers directory
-
+    4. Make sure you have added Network layer by following steps in "Network Management" section
+ 
 ### Google login
  1. Add Google Signin capability to your app by following instructions at this link https://developers.google.com/identity/sign-in/ios/start-integrating
  2. Add SocialAuthManager.swift from Managers directory. (Remove code for other logins if not needed)
