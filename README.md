@@ -69,7 +69,7 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
   2. In your project, add signin with apple capability in `Targets -> Signing & Capabilities`
   3. Click + button, search for Signin with Apple and double click to add capability
 
-### Firabase Authentication
+### Firebase Authentication
 1. Create a firebase project at [Firebase Console](https://console.firebase.google.com/u/0/)
 2. Enable Providers that you want to integrate 
     1. Go to firebase console
