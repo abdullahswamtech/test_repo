@@ -55,16 +55,16 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
 ### Signup/Login
  - Signup, sign in and forgot password functionalities are implemented including UI. Just replace 'baseURL' in MainAPIClient.swift file and endpoints for authentication in relevant request files in `Networking -> Requests -> Authentication` directory.
 
-### Google login
+### Google Login
  1. Open your project configuration: double-click the project name in the left tree view. Select your app from the TARGETS section, then select the Info tab, and expand the URL Types section.
  2. Click the + button, and add your reversed client ID as a URL scheme.The reversed client ID is your client ID with the order of the dot-delimited fields reversed.
   Reference: https://developers.google.com/identity/sign-in/ios/start-integrating
  
-### Facebook Signin
+### Facebook Login
   1. Add Facebook Signin capability to your app by following instructions at [this link](https://developers.facebook.com/docs/facebook-login/ios/). Skip steps 2, 4.2, 5, 6 and 7
   2. Once you create an app at facebook developers console, go to app dashboard, copy the App ID and paste it setAppID() method in SocialAuthManager
 
-### Apple Signin
+### Apple Login
   1. Enable your app's Signin with Apple capability in App developer account
   2. In your project, add signin with apple capability in `Targets -> Signing & Capabilities`
   3. Click + button, search for Signin with Apple and double click to add capability
