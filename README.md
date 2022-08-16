@@ -136,7 +136,7 @@ final class ExampleViewModel {
  - [Apple Login](#apple-login)
  - [Firebase Authentication](#firebase-authentication)
  
- ## Features Management Explanation
+ ## How to customise features to make them work with your app
 ### Theme Management
 - Dark and light modes are handled. Color schemes can be changed with minimal effort by just changing colors in Assets.
 - Add new colors to ThemeManager and assets if it is not already present there.
