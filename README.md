@@ -12,7 +12,7 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
  - Google login
  - Facebook Login
  - Apple Login
- - Firebase Authentication
+ - [Firebase Authentication](#firabase-authentication)
  
  
 ### Theme Management
