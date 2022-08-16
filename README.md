@@ -7,10 +7,10 @@ Fortnight iOS Template is a reference app which contains most commonly used feat
  - UI built programatically using `UIKit` and `Anchorage`
  
 ### Code structure explanation
-Each screen has a [view controller](#view-controller) and a [view model](#view-model). View controller is responsible to send data to view model and display data received from view model. View model is responsibile to recieve data from view controller, manipulate it and send back to view controller to be displayed. See below code snippet to have an idea how MVVM works in this app.
+Each screen has a [view controller](#--view-controller-structure) and a [view model](#--view-model-structure). View controller is responsible to send data to view model and display data received from view model. View model is responsibile to recieve data from view controller, manipulate it and send back to view controller to be displayed. See below code snippet to have an idea how MVVM works in this app.
 (Read code comments for clarification)
- #### View Controller
 
+ #### - View Controller Structure
 ```
 import UIKit
 import Anchorage
@@ -44,7 +44,7 @@ class ExampleViewController: UIViewController {
     
     private func configureUI() {
         configureTitleLabel()
-        configureForgotButton()
+        configureButton()
     }
     
     private func configureTitleLabel() {
@@ -56,7 +56,7 @@ class ExampleViewController: UIViewController {
         titleLabel.centerAnchors == view.centerAnchors
     }
     
-    private func configureForgotButton() {
+    private func configureButton() {
         button.setTitle("< Button >", for: .normal)
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         
@@ -76,8 +76,7 @@ class ExampleViewController: UIViewController {
 }
 
 ```
-
-### View Model
+### - View Model Structure
 ```
 import Foundation
 import Combine
@@ -121,7 +120,7 @@ final class ExampleViewModel {
 
 ```
 
-## Things to change 
+## Things to Change 
 1. Change bundle id in 'General' tab of targets
 2. Change display name in `Targets -> General -> Identity -> Display Name`. If you want to change app name in complete app then follow steps at this [link](https://stackoverflow.com/a/239006/19673742)
 3. Change 'baseURL' in MainAPIClient.swift file
@@ -137,6 +136,7 @@ final class ExampleViewModel {
  - [Apple Login](#apple-login)
  - [Firebase Authentication](#firebase-authentication)
  
+ ## Features Management Explanation
 ### Theme Management
 - Dark and light modes are handled. Color schemes can be changed with minimal effort by just changing colors in Assets.
 - Add new colors to ThemeManager and assets if it is not already present there.
