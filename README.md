@@ -3,15 +3,15 @@
 Fortnight iOS Template is a reference app which contains most commonly used features in mobile apps such as signup/login, social Login, theme management etc. It is built to save development time. UI is also implemented.
 
 ## Design Pattern
- - MVVM using `Combine` framework.
- - UI built programatically using `UIKit` and `Anchorage`
+ - MVVM using [`Combine`](https://developer.apple.com/documentation/combine) framework.
+ - UI built programatically using `UIKit` and [`Anchorage`](https://github.com/Rightpoint/Anchorage)
  
 ### Code structure explanation
 Each screen has a [view controller](#--view-controller-structure) and a [view model](#--view-model-structure). View controller is responsible to send data to view model and display data received from view model. View model is responsibile to recieve data from view controller, manipulate it and send back to view controller to be displayed. See below code snippet to have an idea how MVVM works in this app.
 (Read code comments for clarification)
 
  #### - View Controller Structure
-```
+```Swift
 import UIKit
 import Anchorage
 import Combine
@@ -77,13 +77,13 @@ class ExampleViewController: UIViewController {
 
 ```
 ### - View Model Structure
-```
+```Swift
 import Foundation
 import Combine
 
 final class ExampleViewModel {
 
-    // Enum Input contains all the events that view controller can send to view model
+    // Enum Input contains all the events that view model can recieve from view controller
     enum Input {
         case buttonTapped
     }
@@ -123,8 +123,8 @@ final class ExampleViewModel {
 ## Things to Change 
 1. Change bundle id in 'General' tab of targets
 2. Change display name in `Targets -> General -> Identity -> Display Name`. If you want to change app name in complete app then follow steps at this [link](https://stackoverflow.com/a/239006/19673742)
-3. Change 'baseURL' in MainAPIClient.swift file
-4. Change theme colors in assets to match with design
+3. Change 'baseURL' in [MainAPIClient.swift](https://github.com/StudioFortnight/ios-starter-template/blob/main/Fortnight%20iOS%20Template/Networking/MainAPIClient.swift) file
+4. Change theme colors in assets to match with design (see [Theme Management](#theme-management))
 5. Configure relevant developer consoles for social logins
 
 ## List of Features
@@ -139,14 +139,14 @@ final class ExampleViewModel {
  ## How to customise features to make them work with your app
 ### Theme Management
 - Dark and light modes are handled. Color schemes can be changed with minimal effort by just changing colors in Assets.
-- Add new colors to ThemeManager and assets if it is not already present there.
-- To change theme, assign new value to "ThemeManager.shared.currentTheme" and call ViewController.update()
+- Add new colors to [ThemeManager](https://github.com/StudioFortnight/ios-starter-template/blob/main/Fortnight%20iOS%20Template/Managers/ThemeManager.swift) and assets if it is not already present there.
+- To change theme, assign new value to `ThemeManager.shared.currentTheme` and call `ViewController.update()`
 ### Network Management
  - The network layer is managed in the Networking directory. 
-    1. Change 'baseURL' in MainAPIClient.swift file
+    1. Change 'baseURL' in [MainAPIClient.swift](https://github.com/StudioFortnight/ios-starter-template/blob/main/Fortnight%20iOS%20Template/Networking/MainAPIClient.swift) file
     2. Add requests in requests folder, organised in subdirectories of relevant category (e.g Networking -> Requests -> Authentication contains all requests related to user authentication). See already existing request as reference
     3. Usage example
-        ```
+        ```Swift
         private func signUp() {
             let email = emailViewModel.text.lowercased()
             let password = passwordViewModel.text
@@ -167,7 +167,7 @@ final class ExampleViewModel {
         ```
 
 ### Signup/Login
- - Signup, sign in and forgot password functionalities are implemented including UI. Just change 'baseURL' in MainAPIClient.swift file.
+ - Signup, sign in and forgot password functionalities are implemented including UI. Just change 'baseURL' in [MainAPIClient.swift](https://github.com/StudioFortnight/ios-starter-template/blob/main/Fortnight%20iOS%20Template/Networking/MainAPIClient.swift) file.
 
 ### Google Login
  1. Open your project configuration: double-click the project name in the left tree view. Select your app from the TARGETS section, then select the Info tab, and expand the URL Types section.
